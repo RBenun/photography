@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Tajawal:400,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<meta charset="utf-8">
+	<title>
+		Ronnie Benun Photography
+	</title>
+</head>
+<body>
+	<header>
+		<nav id="navbar">
+			<p id="rbp">
+			Ronnie Benun Photography
+			</p>
+			<input id="checkbox" type="checkbox">
+
+			<div class="dropdown">
+				<label class="dropbtn" for="checkbox"><img src="ham.png" alt="menyoo icon"></label>
+				<div class="dropdown-content">
+					<a href="#">About</a>
+					<a href="#">Gallery</a>
+					<a href="#">Equipment</a>
+					<a href="#">Contact</a>
+				</div>
+			</div>
+			<ul id="links">
+				<li><a href="About">About</a></li>
+				<li><a href="Gallery">Gallery</a></li>
+				<li><a href="Social Media">Equipment</a></li>
+				<li><a href="Contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="heropanel--video" data-vide-bg="mp4: DJI_0109.mp4,  data-vide-options=">
+		<div class="about-text-box">
+			<p> Hi my name is Ronnie Benun i take cool videos <p>
+
+		</div>
+	</section>
+
+
+<script src="js/vendor/jquery-2.1.0.min.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="hero-video.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gordonmac.com/wp-content/themes/2016/vendor/vide/jquery.vide.min.js"></script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+ if (document.documentElement.clientWidth > 700){
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("links").style.display = "flex";
+    $("header nav").removeClass("scroll-down");
+    document.getElementById("navbar").style.height = "8em";
+    document.getElementById("rbp").style.fontSize = "3em";
+  }
+  else {
+   $("#links").hide();
+    $("header nav").addClass("scroll-down");
+    document.getElementById("navbar").style.height = "5em";
+    document.getElementById("rbp").style.fontSize = "2em";
+
+  }
+  prevScrollpos = currentScrollPos;
+}
+}
+
+
+</script>
+
+</body>
+</html>
