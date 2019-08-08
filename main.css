@@ -42,8 +42,13 @@ nav input[type="checkbox"]{
 	display: none;
 }
 
-.about-text-box{
-	background: rgba(255,255,255,.7);
+.pageH{
+	height: 100vw;
+	background-color: yellow;
+	border-top: black 
+}
+.front-page-text-box{
+	background: rgba(255,255,255,.88);
 	width: 50vw;
 	height: 30vw;
 
@@ -52,10 +57,10 @@ nav input[type="checkbox"]{
 	border-color: black;
 }
 
-.about-text-box p{
+.front-page-text-box p{
 	color: darkblue;
 }
-@media (max-width: 700px) {
+@media (max-width: 640px) {
 	nav p{
 		text-align: left;
 		font-size: 2.3em;
@@ -65,6 +70,10 @@ nav input[type="checkbox"]{
 		display: flex;
 		padding-left: 15px;
 		float: right;
+	}
+	.front-page-text-box{
+		width: 90vw;
+		height: 40vw;
 	}
 	nav ul{
 		display: none;
@@ -88,7 +97,7 @@ nav input[type="checkbox"]{
 
 }
 
-@media (min-width: 701px){
+@media (min-width: 641px){
 	#links a{
 	text-decoration: none;
 	color: black;
