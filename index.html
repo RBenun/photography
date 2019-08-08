@@ -76,7 +76,7 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
- if (document.documentElement.clientWidth > 700){
+ if (document.documentElement.clientWidth > 640){
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("links").style.display = "flex";
     $("header nav").removeClass("scroll-down");

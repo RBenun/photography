@@ -45,7 +45,7 @@ nav input[type="checkbox"]{
 .pageH{
 	height: 100vw;
 	background-color: yellow;
-	border-top: black 
+	border-top: black
 }
 .front-page-text-box{
 	background: rgba(255,255,255,.88);
@@ -63,7 +63,7 @@ nav input[type="checkbox"]{
 @media (max-width: 640px) {
 	nav p{
 		text-align: left;
-		font-size: 2.3em;
+		font-size: 1.5em;
 		padding:0 0 0 15px;
 	}
 	.dropbtn img{
@@ -80,6 +80,7 @@ nav input[type="checkbox"]{
 	}
 	nav{
 		flex-direction: row;
+		height: 5em
 
 	}
 
